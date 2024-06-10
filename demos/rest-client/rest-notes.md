@@ -18,7 +18,7 @@
   ```
 - you need a JSON object in the body
 - the JSON object should not have an id property (it is generated on the server by the API)
-- JSON objects can not have a trailing comma after the last property
+- JSON objects cannot have a trailing comma after the last property
 
 
 ## PUT (update)
@@ -31,7 +31,7 @@
   ```
 - you need a JSON object in the body
 - the JSON object should not have an id property (it is generated on the server by the API)
-- JSON objects can not have a trailing comma after the last property
+- JSON objects cannot have a trailing comma after the last property
 
 ## DELETE
 
