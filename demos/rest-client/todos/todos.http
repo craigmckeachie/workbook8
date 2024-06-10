@@ -1,11 +1,11 @@
 
 ### GET ALL
-GET http://localhost:3000/todos
+GET http://localhost:3000/videos
 
 ### GET ONE
 GET http://localhost:3000/todos/19
 
-### POST
+### POST (Insert/Create)
 POST http://localhost:3000/todos
 Content-Type: application/json
 
@@ -15,7 +15,7 @@ Content-Type: application/json
   "completed": false
 }
 
-### PUT
+### PUT (Update)
 PUT http://localhost:3000/todos/19
 Content-Type: application/json
 
