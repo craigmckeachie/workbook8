@@ -118,12 +118,16 @@ The API needed for these labs can be started using the following steps.
      > Hint: the `button` should have an explicit `type="button"` attribute so the form doesn't submit the data to the web server. We will handle the data in the browser using JavaScript
 
 2. **JavaScript Logic (`add.js`):**
-   - Update the existing `add.js` file to include a new function, `addUserData()`.
+
+   - Create a new file named `add.js`.
+   - Link the JavaScript file to the HTML file.
+   - Update the `add.js` file to include a new function, `addUserData()`.
    - Write the `addUserData()` function to:
      - Capture the values entered in the form fields and display it in the browser's console.
    - Have the function run when the user clicks the save button.
 
 3. **Testing:**
+
    - Open the `add.html` file in a web browser.
    - Open the browser's developer tools and go to the console tab.
    - Fill out the form.
@@ -133,12 +137,12 @@ The API needed for these labs can be started using the following steps.
 4. **Additional JavaScript Logic (`add.js`):**
    - Update the `addUserData()` function to:
      - make an HTTP POST request to save the data to the API, and redirect the user to the `index.html` page on success
-3. **Testing:**
+5. **Testing:**
    - Open the `add.html` file in a web browser.
    - Open the browser's developer tools and go to the console tab.
    - Fill out the form.
    - Click the save button.
-   - Verify that the user is redirected to `index.html` and that the new user is displayed in a table row.  
+   - Verify that the user is redirected to `index.html` and that the new user is displayed in a table row.
 
 ### Lab Exercise 4: Editing User Data via Form
 
@@ -155,12 +159,18 @@ The API needed for these labs can be started using the following steps.
      > Hint: the `button` should have an explicit `type="button"` attribute so the form doesn't submit the data to the web server. We will handle the data in the browser using JavaScript
    - Pre-fill the form fields with the existing user data.
 
-2. **JavaScript Logic (`script.js`):**
+2. **JavaScript Logic (`edit.js`):**
 
-   - Update the existing `script.js` file to include a new function, `editUserData()`.
-   - Write the `editUserData()` function to:
+   - Create a new file named `edit.js`.
+   - Link the JavaScript file to the HTML file.
+   - Update the `edit.js` file to include a new function, `loadUserData()`.
+   - Write the `loadUserData()` function to:
      - Fetch the existing user data using the provided `id` parameter.
      - Populate the form fields with the fetched user data.
+   - Call the function
+
+   - Update the `edit.js` file to include a new function, `editUserData()`.
+   - Write the `editUserData()` function to:
      - Capture the edited values from the form fields.
      - Make an HTTP PUT request to your API endpoint to update the user data.
      - Redirect the user to `index.html` on success.
@@ -170,8 +180,8 @@ The API needed for these labs can be started using the following steps.
    - Open the `edit.html` file in a web browser, passing a sample `id` parameter in the URL.
    - Verify that the form is pre-filled with existing user data.
    - Edit the information in the form and submit it.
-   - Confirm that the edited data is successfully updated on the API.
    - Ensure redirection to `index.html` after a successful submission.
+   - Confirm that the edited data is successfully displayed in the table.
 
 4. **Optional Enhancements:**
    - Implement form validation to ensure all required fields are filled before submission.
