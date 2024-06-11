@@ -68,7 +68,10 @@ The API needed for these labs can be started using the following steps.
 
    - Open the existing `index.html` file.
    - Above the user table, add a link to navigate to the `add.html` page. For example: `[Add User](add.html)`.
-   - In each row of the user table, add links to navigate to the `edit.html` and `delete.html` pages for the corresponding user. For example:
+
+2. **JavaScript Logic (`index.js`):**
+
+   - Modify the JavaScript that generates each row of the user table, add links to navigate to the `edit.html` and `delete.html` pages for the corresponding user. For example:
      ```html
      <tr>
        <!-- User Data Cells -->
@@ -79,10 +82,6 @@ The API needed for these labs can be started using the following steps.
        <td>[Delete](delete.html?id=1)</td>
      </tr>
      ```
-
-2. **JavaScript Logic (`index.js`):**
-
-   - No significant changes needed for this step.
    - Ensure that the links in the user table are properly formatted with the user's `id` parameter.
 
 3. **Testing:**
