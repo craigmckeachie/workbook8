@@ -26,11 +26,10 @@ The API needed for these labs can be started using the following steps.
    - Set up the basic HTML structure with a `<!DOCTYPE>` declaration, `<html>`, `<head>`, and `<body>` tags.
    - Include a `<table>` element within the body to display the user data.
 
-2. **CSS Styling (`styles.css`):**
+2. **CSS Styling (`bootstrap.css`):**
 
-   - Create a new file named `styles.css`.
-   - Link the CSS file to the HTML file.
-   - Style the table to have a clean and readable layout. Consider using alternating row colors for better visibility.
+   - Link the bootstrap CSS file to the HTML file.
+   - Style the table to have a clean and readable layout by adding the appropriate bootstrap classes. Consider using alternating row colors for better visibility.
 
 3. **JavaScript Logic (`script.js`):**
 
@@ -51,7 +50,6 @@ The API needed for these labs can be started using the following steps.
 5. **Optional Enhancements:**
    - Add loading indicators while waiting for the API response.
    - Handle errors gracefully, displaying a message if the API request fails.
-   - Explore additional API endpoints or features to fetch more user details.
 
 **Submission with Git:**
 
@@ -76,7 +74,7 @@ The API needed for these labs can be started using the following steps.
        <!-- User Data Cells -->
        <td>John Doe</td>
        <td>john.doe@example.com</td>
-       <!-- Add Edit and Delete Links -->
+       <!-- Add Edit and Delete Links, there will need to be an `a` tag to correctly create the link -->
        <td>[Edit](edit.html?id=1)</td>
        <td>[Delete](delete.html?id=1)</td>
      </tr>
@@ -95,7 +93,6 @@ The API needed for these labs can be started using the following steps.
 
 4. **Optional Enhancements:**
    - Style the links for better visibility.
-   - Consider adding confirmation dialogs for delete links to confirm user intentions.
 
 **Submission with Git:**
 
