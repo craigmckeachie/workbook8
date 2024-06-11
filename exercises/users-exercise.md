@@ -91,9 +91,6 @@ The API needed for these labs can be started using the following steps.
    - Verify that the "Add User" link above the table correctly navigates to the `add.html` page.
    - Verify that the "Edit" and "Delete" links in each row navigate to the respective `edit.html` and `delete.html` pages, passing the user's `id` as a parameter.
 
-4. **Optional Enhancements:**
-   - Style the links for better visibility.
-
 **Submission with Git:**
 
 - Commit your changes with meaningful messages.
@@ -138,11 +135,16 @@ The API needed for these labs can be started using the following steps.
    - Update the `addUserData()` function to:
      - make an HTTP POST request to save the data to the API, and redirect the user to the `index.html` page on success
 5. **Testing:**
+
    - Open the `add.html` file in a web browser.
    - Open the browser's developer tools and go to the console tab.
    - Fill out the form.
    - Click the save button.
    - Verify that the user is redirected to `index.html` and that the new user is displayed in a table row.
+
+6. **Optional Enhancements:**
+   - Display a message that the data was successfully saved on the `index.html` page.
+   - Handle errors gracefully, displaying a message on `add.html` if the API request fails.
 
 ### Lab Exercise 4: Editing User Data via Form
 
@@ -208,9 +210,11 @@ The API needed for these labs can be started using the following steps.
    - Display a confirmation message asking, "Are you sure you want to delete this user?"
    - Include buttons for "Yes" and "Cancel."
 
-2. **JavaScript Logic (`script.js`):**
+2. **JavaScript Logic (`delete.js`):**
 
-   - Update the existing `script.js` file to include a new function, `deleteUserData()`.
+   - Create a new file named `delete.js`.
+   - Link the JavaScript file to the HTML file.
+   - Update the `delete.js` file to include a new function, `deleteUserData()`.
    - Write the `deleteUserData()` function to:
      - Fetch the existing user data using the provided `id` parameter.
      - Display the confirmation message.
@@ -222,12 +226,12 @@ The API needed for these labs can be started using the following steps.
    - Open the `delete.html` file in a web browser, passing a sample `id` parameter in the URL.
    - Confirm that the confirmation message is displayed.
    - Click "Yes" to trigger the deletion.
-   - Verify that the user data is removed from the API.
    - Confirm redirection to `index.html` after a successful deletion.
+   - Verify that the user is no longer displayed in the table.
 
 4. **Optional Enhancements:**
-   - Style the confirmation message for better visibility.
-   - Consider adding a timer to automatically redirect to `index.html` after a certain period if the user does not respond.
+   - Display a message that the data was successfully deleted on the `index.html` page.
+   - Handle errors gracefully, displaying a message on `delete.html` if the API request fails.
 
 **Submission with Git:**
 
