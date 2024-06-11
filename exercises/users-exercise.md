@@ -31,9 +31,9 @@ The API needed for these labs can be started using the following steps.
    - Link the bootstrap CSS file to the HTML file.
    - Style the table to have a clean and readable layout by adding the appropriate bootstrap classes. Consider using alternating row colors for better visibility.
 
-3. **JavaScript Logic (`script.js`):**
+3. **JavaScript Logic (`index.js`):**
 
-   - Create a new file named `script.js`.
+   - Create a new file named `index.js`.
    - Link the JavaScript file to the HTML file.
    - Write a JavaScript function named `fetchAndDisplayUserData()` that:
      - Makes a GET request to your provided API endpoint.
@@ -80,7 +80,7 @@ The API needed for these labs can be started using the following steps.
      </tr>
      ```
 
-2. **JavaScript Logic (`script.js`):**
+2. **JavaScript Logic (`index.js`):**
 
    - No significant changes needed for this step.
    - Ensure that the links in the user table are properly formatted with the user's `id` parameter.
@@ -113,13 +113,32 @@ The API needed for these labs can be started using the following steps.
    - Set up the basic HTML structure with a `<!DOCTYPE>` declaration, `<html>`, `<head>`, and `<body>` tags.
    - Include a `<form>` element within the body to collect user information.
    - Add input fields for each piece of user information (name, username, email, etc.).
+     > DO NOT include form fields for the child objects of the user (address, company)
    - Include a save button.
      > Hint: the `button` should have an explicit `type="button"` attribute so the form doesn't submit the data to the web server. We will handle the data in the browser using JavaScript
 
-2. **JavaScript Logic (`script.js`):**
-   - Update the existing `script.js` file to include a new function, `addUserData()`.
+2. **JavaScript Logic (`add.js`):**
+   - Update the existing `add.js` file to include a new function, `addUserData()`.
    - Write the `addUserData()` function to:
-     - Capture the values entered in the form fields.
+     - Capture the values entered in the form fields and display it in the browser's console.
+   - Have the function run when the user clicks the save button.
+
+3. **Testing:**
+   - Open the `add.html` file in a web browser.
+   - Open the browser's developer tools and go to the console tab.
+   - Fill out the form.
+   - Click the save button.
+   - Verify that the data entered on the form is logged to the console.
+
+4. **Additional JavaScript Logic (`add.js`):**
+   - Update the `addUserData()` function to:
+     - make an HTTP POST request to save the data to the API, and redirect the user to the `index.html` page on success
+3. **Testing:**
+   - Open the `add.html` file in a web browser.
+   - Open the browser's developer tools and go to the console tab.
+   - Fill out the form.
+   - Click the save button.
+   - Verify that the user is redirected to `index.html` and that the new user is displayed in a table row.  
 
 ### Lab Exercise 4: Editing User Data via Form
 
