@@ -1,7 +1,7 @@
 # Hot Tips
 
 - Take your time
-  - even if you think you know the answer read and consider all options
+  - even ifsdfsd you think yofdsfdau know the answer read and consider all options
 - Open book
   - Google is your best friend. Don't use ChatGPT.
   - use workbooks
