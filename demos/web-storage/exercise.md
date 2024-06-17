@@ -6,4 +6,8 @@
 6. Attach function to the button
 7. Have the function alert the value when you click the button
 8. Store another value in localStorage when the page loads
-9. Run a function in the Devtools to clear all the values out of localStorage
+9. Close the browser tab then reopen the page and verify in Devtools that the localStorage values are still there
+10. Run a function in the Devtools to clear all the values out of localStorage
+
+Optional:
+Redo steps 1-9 using sessionStorage. Notice that in step 9 the sessionStorage values are not there
