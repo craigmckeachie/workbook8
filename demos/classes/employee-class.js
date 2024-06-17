@@ -2,10 +2,14 @@
 
 //convention: classes (blueprints) use Pascal-casing. First Letter of each word capitalized
 class Employee {
-  constructor() {
-    this.employeeId = 1;
-    this.firstName = "James";
-    this.lastName = "Spader";
+  constructor(employeeId, firstName, lastName) {
+    this.employeeId = employeeId;
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
+
+  getFullName() {
+    return `${this.lastName}, ${this.firstName}`;
   }
 }
 
@@ -15,20 +19,7 @@ class Employee {
 //   lastName: "Spader",
 // };
 
-// let employee2 = {
-//   employeeId: 1,
-//   firstName: "James",
-//   lastName: "Spader",
-// };
-
-let employee = new Employee();
-let employee2 = new Employee();
-
-console.log(employee);
-console.log(employee);
-console.log(new Employee());
-console.log(new Employee());
-console.log(new Employee());
-console.log(new Employee());
-console.log(new Employee());
-console.log(new Employee());
+let employee = new Employee(1, "James", "Spader");
+console.log(employee.getFullName());
+let employee2 = new Employee(2, "Khaleel", "Coffee");
+console.log(employee2.getFullName());
