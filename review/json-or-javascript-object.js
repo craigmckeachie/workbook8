@@ -8,4 +8,6 @@ let person = {
 console.log(person);
 console.log(JSON.stringify(person));
 
+let objectAsString = JSON.stringify(person);
+
 
