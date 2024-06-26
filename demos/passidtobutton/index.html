@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pass Id to Button</title>
+  </head>
+  <body>
+    <main>
+      <!-- <button id="likeButton" onclick="like(99)">Like</button> -->
+      <button id="likeButton">Like</button>
+    </main>
+    <script>
+      "use strict";
+      const likeButton = document.querySelector("#likeButton");
+
+      function like(postId) {
+        console.log(`http://elasticbean.aws.com/api/posts/like/${postId}`);
+      }
+
+      likeButton.onclick = function () {
+        like(99);
+      };
+      
+      likeButton.addEventListener("click", () => like(99));
+    </script>
+  </body>
+</html>
